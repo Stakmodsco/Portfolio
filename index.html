@@ -7,7 +7,6 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +46,6 @@
             padding: 0 1rem;
         }
 
-        /* Navigation */
         .nav {
             position: sticky;
             top: 0;
@@ -332,7 +330,6 @@
             }
         }
 
-        /* Skills */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -374,7 +371,6 @@
             box-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
         }
 
-        /* Projects */
         .projects-grid {
             display: grid;
             gap: 1.5rem;
@@ -453,7 +449,6 @@
             color: var(--orange-400);
         }
 
-        /* Experience (kept for reuse of styles for service cards) */
         .experience-list {
             display: flex;
             flex-direction: column;
@@ -495,7 +490,6 @@
             color: var(--zinc-300);
         }
 
-        /* Services grid & cards (new) */
         .services-grid {
             display: grid;
             gap: 1.5rem;
@@ -543,7 +537,6 @@
             color: var(--zinc-300);
         }
 
-        /* Analytics */
         .analytics-container {
             height: 16rem;
             width: 100%;
@@ -554,7 +547,6 @@
             padding: 1rem;
         }
 
-        /* Contact */
         .contact-grid {
             display: grid;
             gap: 1.5rem;
@@ -637,7 +629,6 @@
             gap: 0.75rem;
         }
 
-        /* Toast */
         .toast {
             position: fixed;
             bottom: 1.5rem;
@@ -666,7 +657,6 @@
             background-color: #dc2626;
         }
 
-        /* Footer */
         .footer {
             border-top: 1px solid var(--zinc-800);
             margin-top: 5rem;
@@ -698,7 +688,6 @@
             color: var(--orange-400);
         }
 
-        /* Icons */
         .icon {
             width: 1rem;
             height: 1rem;
@@ -712,7 +701,6 @@
             margin-right: 0.25rem;
         }
 
-        /* Animations */
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -759,7 +747,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav">
         <div class="container">
             <div class="nav-content">
@@ -768,7 +755,6 @@
                     <button class="nav-btn" data-scroll="about">About</button>
                     <button class="nav-btn" data-scroll="skills">Skills</button>
                     <button class="nav-btn" data-scroll="projects">Projects</button>
-                    <!-- Changed Experience -> Services -->
                     <button class="nav-btn" data-scroll="services">Services</button>
                     <button class="nav-btn" data-scroll="analytics">Analytics</button>
                     <button class="nav-btn" data-scroll="contact">Contact</button>
@@ -784,7 +770,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero scale-in">
         <div class="container">
             <div class="hero-content">
@@ -846,7 +831,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section fade-in">
         <div class="container">
             <h2 class="section-title">About</h2>
@@ -863,37 +847,30 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section slide-in-left">
         <div class="container">
             <h2 class="section-title">Skills</h2>
             <div class="skills-grid" id="skills-grid">
-                <!-- Skills will be populated by JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section slide-in-left">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid" id="projects-grid">
-                <!-- Projects will be populated by JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- Services Section (replaces Experience) -->
     <section id="services" class="section slide-in-right">
         <div class="container">
             <h2 class="section-title">Services Offered</h2>
             <div class="services-grid" id="services-grid">
-                <!-- Services will be populated by JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- Analytics Section -->
     <section id="analytics" class="section fade-in">
         <div class="container">
             <h2 class="section-title">Analytics</h2>
@@ -903,7 +880,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section fade-in">
         <div class="container">
             <h2 class="section-title">Contact</h2>
@@ -954,7 +930,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -976,11 +951,9 @@
         </div>
     </footer>
 
-    <!-- Toast notification -->
     <div id="toast" class="toast"></div>
 
     <script>
-        // Site configuration
         const site = {
             name: "Martin Kihiu",
             title: "Developer • AI Agent Specialist",
@@ -1058,6 +1031,24 @@
                     image: "https://res.cloudinary.com/dud0zwl1t/image/upload/v1758123757/AI_Travel_Mobile_App_UI_UX_xalu24.jpg"
                 },
                 {
+                    title: "Delivery Company SaaS",
+                    description: "A full-stack travel booking platform inspired by Booking.com. Users can search, filter, and book hotels and experiences with secure payments.",
+                    tech: ["React.js", "Node.js", "MongoDB", "Stripe", "TailwindCSS"],
+                    links: [
+                        { label: "Repo", href: "https://github.com/Stakmodsco" }
+                    ],
+                    image: "https://res.cloudinary.com/dud0zwl1t/image/upload/v1758123757/AI_Travel_Mobile_App_UI_UX_xalu24.jpg"
+                }, 
+                {
+                    title: "Delivery Company SaaS",
+                    description: "A full-stack travel booking platform inspired by Booking.com. Users can search, filter, and book hotels and experiences with secure payments.",
+                    tech: ["React.js", "Node.js", "MongoDB", "Stripe", "TailwindCSS"],
+                    links: [
+                        { label: "Repo", href: "https://github.com/Stakmodsco" }
+                    ],
+                    image: "https://res.cloudinary.com/dud0zwl1t/image/upload/v1758123757/AI_Travel_Mobile_App_UI_UX_xalu24.jpg"
+                }, 
+                {
                     title: "DesignHub — UI/UX Case Studies",
                     description: "Composable loops for scheduled agents: ETL, monitoring, research, and reporting with human-in-the-loop gates.",
                     tech: ["Python", "Celery", "Airflow", "LLM Agents"],
@@ -1065,7 +1056,6 @@
                     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop"
                 }
             ],
-            // Replaced/mapped services data - now use image URLs (changed from emoji to image links)
             services: [
                 {
                     title: "Full-Stack Development",
